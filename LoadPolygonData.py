@@ -8,7 +8,7 @@ import statsmodels.tsa.stattools as ts
 cnx = db.connect('ETF.db')
 c = cnx.cursor()
 
-api = tradeapi.REST('AK9HQW4WJHCASBWHXU3S', 'RxxstmclONPorawilm3lcM4jbkabK1suenkWM768', 'https://paper-api.alpaca.markets')
+api = tradeapi.REST('<key_id>', '<secret_key_id>', 'https://paper-api.alpaca.markets')
 account = api.get_account()
 api.list_positions()
 
