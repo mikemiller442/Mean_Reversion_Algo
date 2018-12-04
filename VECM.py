@@ -158,7 +158,7 @@ class ETF:
 
 
 if __name__ == "__main__":
-    api = tradeapi.REST('AKUIBA33DB4AC9N8OO5N', 'RxTrUVJ35hCscaSYI3jPAWx2UqoUPYogxZlSr3M9',
+    api = tradeapi.REST('<key_id>', '<secret_key_id>',
                         'https://api.alpaca.markets')
     account = api.get_account()
     positions = []
