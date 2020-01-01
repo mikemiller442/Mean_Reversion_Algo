@@ -8,3 +8,5 @@ MeanReversion.py backtests a simple pairwise trading strategy that assumes a fix
 KalmanFilter.py improves this by updating this hedge ratio and the variance of the residuals in a Bayesian manner as evidence is collected. This is definitely superior because the hedge ratio will most likely change in time, especially if the ETFs appreciate in value or if their volatility increases.
 
 VECM.py is a different way to improve the original strategy by using vector error correction models to predict the short term deviations in cointegrated ETFs. This gives a more precise view of the short term movements because it relies on autoregressive models that utilize autocorrelation across both securities. Alpaca_Trade.py executes trades on alpaca markets using indicators from these VECM models.
+
+Different data sets are scraped from NASDAQ and collected from Polygon.
